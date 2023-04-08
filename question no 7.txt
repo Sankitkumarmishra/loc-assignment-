@@ -1,0 +1,5 @@
+7) What is the size of a C structure? How the size of a C structure is calculated? 
+
+Size of C structure is 128 bytes
+The size of a C structure was calculated by 
+the total bytes of all elements of structure.

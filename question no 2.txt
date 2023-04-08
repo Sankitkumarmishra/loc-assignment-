@@ -1,18 +1,21 @@
-#include<stdio.h>
-void main()
-{
-    int a;
-    printf("Enter a number:");
-    scanf("%d",&a);
-    if(a>0)
-    {
-        printf("The Number %d is Positive.");
-    }
-    else if(a<0)
-    {
-        printf("The Number is %d is Negative.");
-    }
-    else{
-        printf("The Number is Zero.");
-    }
+#include <stdio.h>
+int main() 
+{
+    char str[1000], ch;
+    int count = 0;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    printf("Enter a character to find its frequency: ");
+    scanf("%c", &ch);
+
+    for (int i = 0; str[i] != '\0'; ++i) 
+    {
+        if (ch == str[i])
+            ++count;
+    }
+
+    printf("Frequency of %c = %d", ch, count);
+    return 0;
 }

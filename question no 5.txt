@@ -1,18 +1,17 @@
-#include <stdio.h>
-
-void main()
-{
-    float radius, diameter, circumference, area;
-
-    printf("Enter radius of circle: ");
-    scanf("%f", &radius);
-
-    diameter = 2 * radius;
-    circumference = 2 * 3.14 * radius;
-    area = 3.14 * (radius * radius);
-
-    printf("Diameter of circle = %.2f units \n", diameter);
-    printf("Circumference of circle = %.2f units \n", circumference);
-    printf("Area of circle = %.2f sq. units ", area);
-
+ 5) Find the output of the following snippets:
+a. char ****k;
+
+ ans-: i) k is a pointer to a pointer to a pointer to a char
+
+b)b. void main()
+{
+int k = 5;
+int *p = &k;
+int **m = &p;
+**m = 6;
+printf("%d\n", k);
 }
+
+ans-: iii) 6
+
+

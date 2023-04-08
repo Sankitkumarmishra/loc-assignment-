@@ -1,0 +1,3 @@
+6. Choose the correct statement about structures in C program:
+
+ans-: b. Structure members cannot be initialized at the time of declaration
